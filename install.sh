@@ -118,12 +118,8 @@ mv $CHROOT/home/ubuntu/.bashrc $CHROOT/home/ubuntu/.bashrc.bak
 cat > $CHROOT/home/ubuntu/.bashrc <<- EOF
 vncstart
 sleep 4
-DISPLAY=:1 firefox &
-sleep 10
-pkill -f firefox
-vncstop
+DISPLAY=:1
 sleep 4
-exit
 echo
 EOF
 ubuntu
@@ -150,7 +146,7 @@ rm -rf ~/install.sh
 banner
 install_ubuntu
 install_desktop
-#install_extra
+install_extra
 adding_user
 install_theme
 sound_fix
