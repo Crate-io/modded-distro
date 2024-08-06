@@ -20,6 +20,9 @@
 ### Installation
 Paste following command in Termux
 ```bash
-curl https://raw.githubusercontent.com/TecnicalBot/modded-distro/main/install.sh >> install.sh
-bash install.sh
+curl https://raw.githubusercontent.com/Crate-io/modded-distro/main/install.sh >> ubuntu-installer.sh
+```
+Then,
+```bash
+bash ubuntu-installer
 ```
