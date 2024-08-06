@@ -47,7 +47,6 @@ dpkg --configure -a
 apt-mark hold udisks2
 apt-get install xfce4 gnome-terminal nautilus dbus-x11 tigervnc-standalone-server -y
 echo "vncserver -geometry 1280x720 -xstartup /usr/bin/startxfce4" >> /usr/local/bin/vncstart
-echo "vncserver -kill :* ; rm -rf /tmp/.X1-lock ; rm -rf /tmp/.X11-unix/X1" >> /usr/local/bin/vncstop
 chmod +x /usr/local/bin/vncstart 
 chmod +x /usr/local/bin/vncstop 
 sleep 2
@@ -140,7 +139,7 @@ echo
 echo "vncstart  -  To start vncserver, Execute inside ubuntu"
 echo
 echo "vncstop  -  To stop vncserver, Execute inside ubuntu"${W}
-rm -rf ~/install.sh
+rm -rf ~/ubuntu-installer.sh
 }
 
 banner
